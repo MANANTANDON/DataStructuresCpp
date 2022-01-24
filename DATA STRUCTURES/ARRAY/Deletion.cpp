@@ -24,32 +24,36 @@ int main(){
 	    cout<<a[i]<<" ";
 	}
 	
+	//Deleting from last position....
 	cout<<"\n\n*** DELETING FROM LAST POSITION ***";
-    n = n - 1;
+    	n = n - 1;
 	display(n, a);
 	
+	//Deleting from first position....
 	cout<<"\n\n*** DELETING FROM FIRST POSITION ***";
 	n = n - 1;
-    for (i=0; i<n; i++){
-        a[i] = a[i+1];
-    }
+   	for (i=0; i<n; i++){
+        	a[i] = a[i+1];
+    	}
 	display(n, a);
 	
+	//Deleting from any position....
 	cout<<"\n\n*** DELETING FROM ANY POSITION ***";
 	int ele;
 	cout<<"\nEnter the element you want to enter: ";
 	cin>>ele;
 	
-    for (i=0; i<n; i++){
-        if (a[i] == ele){
-            break;
-        }
-    }
-    if (i < n){
-        n = n - 1;
-        for (int j=i; j<n; j++)
-            a[j] = a[j+1];
-    }
-    display(n, a);
+    	for (i=0; i<n; i++){
+        	if (a[i] == ele){
+            		break;
+        	}
+    	}
+    	if (i < n){
+        	n = n - 1;
+        	for (int j=i; j<n; j++){
+            		a[j] = a[j+1];
+		}
+    	}
+    	display(n, a);
 	
 }
