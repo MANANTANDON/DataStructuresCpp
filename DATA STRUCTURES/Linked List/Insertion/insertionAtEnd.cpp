@@ -38,7 +38,7 @@ void printLinkedList(Node *node){
         cout<<"\nnode-address = "<<node<<"\nnode->data: "<<node->data<<"; "<<" node->link: "<<node->link<<"; \n";
         node = node->link;
     }
-    cout<<"\n-----------------NODE STARTED-----------------"<<endl;
+    cout<<"\n-----------------NODE ENDED-----------------"<<endl;
 }
 
 
