@@ -29,7 +29,6 @@ void atEnd(Node** head, int data){
    }
    
    p->link = newNode;
-   return;
 }
 
 void printLinkedList(Node *node){
