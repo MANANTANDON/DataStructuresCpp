@@ -29,6 +29,7 @@ void atEnd(Node** head, int data){
    }
    
    p->link = newNode;
+   return;
 }
 
 void printLinkedList(Node *node){
@@ -42,7 +43,7 @@ void printLinkedList(Node *node){
 }
 
 
-int main() {
+int main(int argc, const char * argv[]) {
     int n,j;
     Node *head = NULL;
     cout<<"How many nodes you want to create? \n- ";
