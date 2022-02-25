@@ -25,8 +25,10 @@ void atMiddle(Node **head){
     int pos;
     Node *p = *head;
     Node *newNode = new Node();
-    cout<<"Enter the data: "; cin>>newNode->data;
-    cout<<"At what position you want to enter? \n-"; cin>>pos;
+    cout<<"Enter the data: "; 
+    cin>>newNode->data;
+    cout<<"At what position you want to enter? \n-"; 
+    cin>>pos;
     for(int i=0;i<pos-2;i++){
         p = p->link;
     }
