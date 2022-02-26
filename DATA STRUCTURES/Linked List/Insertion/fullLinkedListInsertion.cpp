@@ -76,8 +76,7 @@ int main(int argc, const char * argv[]) {
     char toggle = 'y';
     
     while(toggle == 'y'){
-        cout<<"Where you want to enter the data ?\n1.At First \n2.At Any Position \n3.At Last \n4.Print Linked List \n5.List Length \n6.EXIT \n- "; 
-        cin>>choice;
+        cout<<"Where you want to enter the data ?\n1.At First \n2.At Any Position \n3.At Last \n4.Print Linked List \n5.List Length \n6.EXIT \n- "; cin>>choice;
         switch (choice) {
             case 1:
                 cout<<"Enter the data: "; cin>>j;
