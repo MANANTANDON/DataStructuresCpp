@@ -117,7 +117,8 @@ int main(int argc, const char * argv[]) {
     Node *head = NULL;
     char toggle = 'y';
     while(toggle == 'y'){
-        cout<<"What you want to do ?\n1.Insert at First \n2.Insert at Any Position \n3.Insert At Last \n4.Delete from Front \n5.Delete from any position \n6.Delete from Last\n7.Print Linked List \n8.List Length \n9.EXIT \n- "; cin>>choice;
+        cout<<"What you want to do ?\n1.Insert at First \n2.Insert at Any Position \n3.Insert At Last \n4.Delete from Front \n5.Delete from any position \n6.Delete from Last\n7.Print Linked List \n8.List Length \n9.EXIT \n- "; 
+        cin>>choice;
         switch (choice) {
             case 1:
                 cout<<"Enter the data: "; cin>>j;
