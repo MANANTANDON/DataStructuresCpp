@@ -100,6 +100,23 @@ void deleteFromLast(Node *&head){
     return;
 }
 
+void searchElement(Node *head){
+    Node *p = head;
+    int n;
+    cout<<"Enter the element you want to search: "; cin>>n;
+    while(p->link != NULL){
+        if(p->data == n){
+            cout<<"Element found ! \n\n";
+            return;
+        }
+        p = p->link;
+    }
+    if(p->data == n){
+        cout<<"Element found ! \n\n";
+    }
+    cout<<"Element not found !\n\n";
+}
+
 void printLinkedList(Node *node){
     cout<<"\n-----------------NODE STARTED-----------------";
     cout<<"\nhead = "<<node<<endl;
@@ -117,7 +134,7 @@ int main(int argc, const char * argv[]) {
     Node *head = NULL;
     char toggle = 'y';
     while(toggle == 'y'){
-        cout<<"What you want to do ?\n1.Insert at First \n2.Insert at Any Position \n3.Insert At Last \n4.Delete from Front \n5.Delete from any position \n6.Delete from Last\n7.Print Linked List \n8.List Length \n9.EXIT \n- "; cin>>choice;
+        cout<<"What you want to do ?\n1.Insert at First \n2.Insert at Any Position \n3.Insert At Last \n4.Delete from Front \n5.Delete from any position \n6.Delete from Last\n7.Print Linked List \n8.List Length \n9.SEARCH ELEMENT \n10.EXIT \n- "; cin>>choice;
         switch (choice) {
             case 1:
                 cout<<"Enter the data: "; cin>>j;
@@ -154,6 +171,10 @@ int main(int argc, const char * argv[]) {
                 break;
 
             case 9:
+                searchElement(head);
+                break;
+                
+            case 10:
                 toggle = 'n';
                 break;
 
